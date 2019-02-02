@@ -61,7 +61,7 @@ class ViewController: UIViewController {
         
         
         let request = NSMutableURLRequest(url: NSURL(string: "https://emy.mx/ios/Login.php?correo=\(txtUsuario.text!)&contrasena=\(txtPass.text!)")! as URL)
-        request.httpMethod = "GET"
+        request.httpMethod = "POST"
     
         let task = URLSession.shared.dataTask(with: request as URLRequest)
         {
@@ -84,10 +84,6 @@ class ViewController: UIViewController {
 
                 DispatchQueue.main.async {
                     self.performSegue(withIdentifier: "login", sender: nil)
-                    
-                    //Guardar usuario en preferencias
-                    UserDefaults.standard.set(self.txtUsuario.text, forKey: "Usuario")
-                    
                 }
                     
                 
