@@ -1,0 +1,6 @@
+framework module Pods_EMYTests {
+  umbrella header "Pods-EMYTests-umbrella.h"
+
+  export *
+  module * { export * }
+}
