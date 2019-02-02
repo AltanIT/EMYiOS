@@ -114,13 +114,17 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="618"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Smu-XV-iL9">
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="Smu-XV-iL9">
                                 <rect key="frame" x="0.0" y="0.0" width="375" height="189"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="189" id="Ftc-wM-o2X"/>
+                                </constraints>
                             </imageView>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="egq-QB-gIX">
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="egq-QB-gIX">
                                 <rect key="frame" x="16" y="24" width="118" height="127"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="127" id="7cw-3G-cHd"/>
+                                </constraints>
                             </imageView>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="bnJ-te-cYL">
                                 <rect key="frame" x="122" y="219" width="130" height="21"/>
@@ -131,6 +135,14 @@
                             </label>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="Smu-XV-iL9" firstAttribute="top" secondItem="V5y-91-Cgn" secondAttribute="top" id="2L5-Sj-U3p"/>
+                            <constraint firstItem="egq-QB-gIX" firstAttribute="top" secondItem="rCE-So-kzb" secondAttribute="top" constant="4" id="RGM-MR-SRh"/>
+                            <constraint firstItem="egq-QB-gIX" firstAttribute="leading" secondItem="rCE-So-kzb" secondAttribute="leading" constant="16" id="XAT-Et-FGs"/>
+                            <constraint firstItem="rCE-So-kzb" firstAttribute="trailing" secondItem="egq-QB-gIX" secondAttribute="trailing" constant="241" id="e41-Qb-KWr"/>
+                            <constraint firstItem="Smu-XV-iL9" firstAttribute="trailing" secondItem="rCE-So-kzb" secondAttribute="trailing" id="mTE-bz-Iu6"/>
+                            <constraint firstItem="Smu-XV-iL9" firstAttribute="leading" secondItem="rCE-So-kzb" secondAttribute="leading" id="w0h-6U-7b3"/>
+                        </constraints>
                         <viewLayoutGuide key="safeArea" id="rCE-So-kzb"/>
                     </view>
                     <extendedEdge key="edgesForExtendedLayout" top="YES"/>

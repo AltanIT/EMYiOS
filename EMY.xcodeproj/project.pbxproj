@@ -21,6 +21,7 @@
 		647972A821F67E4D00EA1FDB /* EMYTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 647972A721F67E4D00EA1FDB /* EMYTests.swift */; };
 		647972B321F67E4D00EA1FDB /* EMYUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 647972B221F67E4D00EA1FDB /* EMYUITests.swift */; };
 		64FF778B22039DE900987072 /* Persona.swift in Sources */ = {isa = PBXBuildFile; fileRef = 64FF778A22039DE900987072 /* Persona.swift */; };
+		9344E33D22062090005E2938 /* Pods in Resources */ = {isa = PBXBuildFile; fileRef = 9344E33C2206208F005E2938 /* Pods */; };
 		C12974E006CC128B6E22359C /* Pods_EMYUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 242A75ABA57E55278392EDBE /* Pods_EMYUITests.framework */; };
 		F0DAD393D3140C73E4B351FD /* Pods_EMYTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5FBC97C72C2C8520B0F52BD0 /* Pods_EMYTests.framework */; };
 /* End PBXBuildFile section */
@@ -39,6 +40,34 @@
 			proxyType = 1;
 			remoteGlobalIDString = 6479728E21F67E4C00EA1FDB;
 			remoteInfo = EMY;
+		};
+		9344E345220620BA005E2938 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 9344E33E220620B9005E2938 /* Pods.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 13A8E3FFBB61F7B413B5FA798E41BBDC;
+			remoteInfo = "Pods-EMY";
+		};
+		9344E347220620BA005E2938 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 9344E33E220620B9005E2938 /* Pods.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = C40F0471CE26FD3B835BAC1155873897;
+			remoteInfo = "Pods-EMYTests";
+		};
+		9344E349220620BA005E2938 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 9344E33E220620B9005E2938 /* Pods.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = DC44EB1D1A9BB207C1F805C7E9D32EF2;
+			remoteInfo = "Pods-EMYUITests";
+		};
+		9344E34B220620BA005E2938 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 9344E33E220620B9005E2938 /* Pods.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = B5AAE64E77D83AA71A2741846BB890C5;
+			remoteInfo = SDWebImage;
 		};
 /* End PBXContainerItemProxy section */
 
@@ -69,6 +98,8 @@
 		64FF778A22039DE900987072 /* Persona.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Persona.swift; sourceTree = "<group>"; };
 		8A1DE82A8828AAF6A375879A /* Pods_EMY.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_EMY.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		8C649E6DBEA45366ED6C809C /* Pods-EMYTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-EMYTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-EMYTests/Pods-EMYTests.release.xcconfig"; sourceTree = "<group>"; };
+		9344E33C2206208F005E2938 /* Pods */ = {isa = PBXFileReference; lastKnownFileType = folder; path = Pods; sourceTree = "<group>"; };
+		9344E33E220620B9005E2938 /* Pods.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = Pods.xcodeproj; path = Pods/Pods.xcodeproj; sourceTree = "<group>"; };
 		ABADBE165FF7C9ADCC25DEF8 /* Pods-EMY.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-EMY.debug.xcconfig"; path = "Pods/Target Support Files/Pods-EMY/Pods-EMY.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -103,6 +134,8 @@
 		135922EE84BB578F8E418577 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				9344E33E220620B9005E2938 /* Pods.xcodeproj */,
+				9344E33C2206208F005E2938 /* Pods */,
 				8A1DE82A8828AAF6A375879A /* Pods_EMY.framework */,
 				5FBC97C72C2C8520B0F52BD0 /* Pods_EMYTests.framework */,
 				242A75ABA57E55278392EDBE /* Pods_EMYUITests.framework */,
@@ -205,6 +238,17 @@
 			path = Objetos;
 			sourceTree = "<group>";
 		};
+		9344E33F220620B9005E2938 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				9344E346220620BA005E2938 /* Pods_EMY.framework */,
+				9344E348220620BA005E2938 /* Pods_EMYTests.framework */,
+				9344E34A220620BA005E2938 /* Pods_EMYUITests.framework */,
+				9344E34C220620BA005E2938 /* SDWebImage.framework */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -299,6 +343,12 @@
 			mainGroup = 6479728621F67E4C00EA1FDB;
 			productRefGroup = 6479729021F67E4C00EA1FDB /* Products */;
 			projectDirPath = "";
+			projectReferences = (
+				{
+					ProductGroup = 9344E33F220620B9005E2938 /* Products */;
+					ProjectRef = 9344E33E220620B9005E2938 /* Pods.xcodeproj */;
+				},
+			);
 			projectRoot = "";
 			targets = (
 				6479728E21F67E4C00EA1FDB /* EMY */,
@@ -308,6 +358,37 @@
 		};
 /* End PBXProject section */
 
+/* Begin PBXReferenceProxy section */
+		9344E346220620BA005E2938 /* Pods_EMY.framework */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.framework;
+			path = Pods_EMY.framework;
+			remoteRef = 9344E345220620BA005E2938 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		9344E348220620BA005E2938 /* Pods_EMYTests.framework */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.framework;
+			path = Pods_EMYTests.framework;
+			remoteRef = 9344E347220620BA005E2938 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		9344E34A220620BA005E2938 /* Pods_EMYUITests.framework */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.framework;
+			path = Pods_EMYUITests.framework;
+			remoteRef = 9344E349220620BA005E2938 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		9344E34C220620BA005E2938 /* SDWebImage.framework */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.framework;
+			path = SDWebImage.framework;
+			remoteRef = 9344E34B220620BA005E2938 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+/* End PBXReferenceProxy section */
+
 /* Begin PBXResourcesBuildPhase section */
 		6479728D21F67E4C00EA1FDB /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
@@ -316,6 +397,7 @@
 				6479729D21F67E4D00EA1FDB /* LaunchScreen.storyboard in Resources */,
 				646CE02521FA6DB600DBD066 /* Registro.storyboard in Resources */,
 				646D20B02200FC0C00E7C2A9 /* Assets.xcassets in Resources */,
+				9344E33D22062090005E2938 /* Pods in Resources */,
 				6479729821F67E4C00EA1FDB /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
