@@ -10,6 +10,7 @@ import UIKit
 import SDWebImage
 
 
+
 class InicioViewController: UIViewController {
     
     @IBOutlet weak var txtAlias: UILabel!
@@ -68,8 +69,6 @@ class InicioViewController: UIViewController {
         
         tarea.resume()
 
-        
-        
     }
     
     func mostrarPerfil(alias:String, portada:String, perfil:String){
