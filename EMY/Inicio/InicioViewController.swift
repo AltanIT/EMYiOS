@@ -24,6 +24,7 @@ class InicioViewController: UIViewController {
         super.viewDidLoad()
         
     
+        
 
             txtAlias.text = "Hola, estamos cargando tu informaciòn"
         // Do any additional setup after loading the view.
