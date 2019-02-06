@@ -20,12 +20,10 @@ class ViewController: UIViewController {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
         
-
     }
 
     //Boton Iniciar Sesiòn
     @IBAction func btnIniciar(_ sender: Any) {
-    
         
         if(txtUsuario.text==""||txtPass.text==""){
             
@@ -59,7 +57,7 @@ class ViewController: UIViewController {
         
         
         
-        let request = NSMutableURLRequest(url: NSURL(string: "https://emy.mx/ios/Login.php?correo=\(txtUsuario.text!)&contrasena=\(txtPass.text!)")! as URL)
+        let request = NSMutableURLRequest(url: NSURL(string: "http://104.154.201.83/ios/Login.php?correo=\(txtUsuario.text!)&contrasena=\(txtPass.text!)")! as URL)
         request.httpMethod = "GET"
     
         let task = URLSession.shared.dataTask(with: request as URLRequest)

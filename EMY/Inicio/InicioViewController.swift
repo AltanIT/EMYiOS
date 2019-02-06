@@ -29,7 +29,7 @@ class InicioViewController: UIViewController {
         // Do any additional setup after loading the view.
         let Usuario = UserDefaults.standard.string(forKey: "Usuario")
         
-        let webservice = "https://emy.mx/ios/MiPerfil.php?correo=\(Usuario!)"
+        let webservice = "http://104.154.201.83/ios/MiPerfil.php?correo=\(Usuario!)"
         let objetoUrl =    URL(string: webservice)
         
         let tarea = URLSession.shared.dataTask(with: objetoUrl!){
