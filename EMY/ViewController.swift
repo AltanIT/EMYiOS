@@ -58,7 +58,7 @@ class ViewController: UIViewController {
         
         
         
-        let request = NSMutableURLRequest(url: NSURL(string: "http://104.154.201.83/ios/Login.php?correo=\(txtUsuario.text!)&contrasena=\(txtPass.text!)")! as URL)
+        let request = NSMutableURLRequest(url: NSURL(string: "http://35.196.214.220/ios/Login.php?correo=\(txtUsuario.text!)&contrasena=\(txtPass.text!)")! as URL)
         request.httpMethod = "GET"
     
         let task = URLSession.shared.dataTask(with: request as URLRequest)
@@ -69,13 +69,16 @@ class ViewController: UIViewController {
             {
                 print("error=\(String(describing: error))")
             }
-            
+           
             print(String(describing: response))
             let responseString = NSString(data: data!, encoding: String.Encoding.utf8.rawValue)
-            var respuesta = responseString!
+            let respuesta = responseString!
+            
     
           print(respuesta)
             mensaje = respuesta as String
+                
+            
             
             
             if(respuesta==""||respuesta=="Ok"){
