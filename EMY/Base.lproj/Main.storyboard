@@ -19,7 +19,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Correo Electrònico o Telèfonico" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="JXV-ao-5TU">
-                                <rect key="frame" x="44" y="434" width="327" height="30"/>
+                                <rect key="frame" x="44" y="276" width="327" height="30"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="30" id="SbB-7Q-62B"/>
                                 </constraints>
@@ -28,7 +28,7 @@
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
                             <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Contraseña o PIN" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="EFa-Rz-hAC">
-                                <rect key="frame" x="44" y="490" width="327" height="30"/>
+                                <rect key="frame" x="44" y="332" width="327" height="30"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="30" id="L4k-Rn-1cf"/>
                                 </constraints>
@@ -37,7 +37,7 @@
                                 <textInputTraits key="textInputTraits" keyboardAppearance="alert" secureTextEntry="YES" textContentType="new-password"/>
                             </textField>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Recuperar Cuenta" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="VEf-pT-hzC">
-                                <rect key="frame" x="138" y="541" width="139" height="21"/>
+                                <rect key="frame" x="138" y="383" width="139" height="21"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="21" id="YGO-xD-1DC"/>
                                 </constraints>
@@ -46,7 +46,7 @@
                                 <nil key="highlightedColor"/>
                             </label>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="0UP-XP-vR6">
-                                <rect key="frame" x="88" y="586" width="240" height="40"/>
+                                <rect key="frame" x="88" y="428" width="240" height="40"/>
                                 <color key="backgroundColor" red="0.70520701142131981" green="0.16479328099685728" blue="0.12817060797554333" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="40" id="hUe-hi-eGz"/>
@@ -57,15 +57,8 @@
                                     <action selector="btnIniciar:" destination="BYZ-38-t0r" eventType="touchUpInside" id="e42-i0-s6c"/>
                                 </connections>
                             </button>
-                            <imageView userInteractionEnabled="NO" alpha="0.94999999999999996" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="icons8-usuario-masculino-en-círculo-filled-90" highlightedImage="icons8-usuario-masculino-en-círculo-100" translatesAutoresizingMaskIntoConstraints="NO" id="auH-oT-QbT">
-                                <rect key="frame" x="87" y="106" width="240" height="304"/>
-                                <constraints>
-                                    <constraint firstAttribute="height" constant="146" id="XMh-0U-b9i"/>
-                                    <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="146" id="xgJ-xS-kYl"/>
-                                </constraints>
-                            </imageView>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" reversesTitleShadowWhenHighlighted="YES" showsTouchWhenHighlighted="YES" adjustsImageSizeForAccessibilityContentSizeCategory="YES" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="DB4-VU-cAu">
-                                <rect key="frame" x="87" y="670" width="240" height="40"/>
+                                <rect key="frame" x="87" y="512" width="240" height="40"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="40" id="732-l8-hdE"/>
                                     <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="40" id="QZp-KY-dpf"/>
@@ -79,6 +72,13 @@
                                     <segue destination="Qxe-z0-GvI" kind="show" id="Vlz-YY-93W"/>
                                 </connections>
                             </button>
+                            <imageView userInteractionEnabled="NO" alpha="0.94999999999999996" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" image="icons8-usuario-masculino-en-círculo-filled-90" highlightedImage="icons8-usuario-masculino-en-círculo-100" translatesAutoresizingMaskIntoConstraints="NO" id="auH-oT-QbT">
+                                <rect key="frame" x="87" y="92" width="240" height="304"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="146" id="XMh-0U-b9i"/>
+                                    <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="146" id="xgJ-xS-kYl"/>
+                                </constraints>
+                            </imageView>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
