@@ -79,8 +79,6 @@ class ViewController: UIViewController {
             mensaje = respuesta as String
                 
             
-            
-            
             if(respuesta==""||respuesta=="Ok"){
 
                 DispatchQueue.main.async {
@@ -95,16 +93,10 @@ class ViewController: UIViewController {
             }else{
            self.mostrarmensaje()
             }
-
-
-
-            
             
         }
         task.resume()
       
-        
-    
 }
     
     

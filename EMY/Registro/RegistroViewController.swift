@@ -10,13 +10,53 @@ import UIKit
 
 class RegistroViewController: UIViewController {
 
-    @IBOutlet weak var texto: UITextField!
     
-    override func viewDidLoad() {
+    //Empieza el Calendario
+    @IBOutlet weak var DatePickerTF: UITextField!
+    let datePicker = UIDatePicker()
+    
+    override func viewDidLoad(){
         super.viewDidLoad()
-
-        // Do any additional setup after loading the view.
+        
+        createDatePicker()
+        
     }
+    
+    func createDatePicker(){
+        
+        datePicker.datePickerMode = .date
+        
+        //asigna el dato en nuestro textfield
+        DatePickerTF.inputView = datePicker
+        
+        //create a toolbar
+        let toolbar = UIToolbar()
+        toolbar.sizeToFit()
+        
+        //add a done button on this toolbar
+        let doneButton = UIBarButtonItem(barButtonSystemItem:.done, target: nil, action: #selector (doneClicked))
+        
+        toolbar.setItems([doneButton], animated: true)
+        
+        DatePickerTF.inputAccessoryView = toolbar
+        
+    }
+    
+    @objc func doneClicked(){
+        //formato de fecha en textfield
+        
+        let dateformatter = DateFormatter()
+        dateformatter.dateStyle = .medium
+        dateformatter.timeStyle = .none
+        
+        DatePickerTF.text = "\(datePicker.date)"
+        self.view.endEditing(true)
+        
+        
+    }     //Ternima calendario
+    
+    
+    @IBOutlet weak var texto: UITextField!
     
 
     

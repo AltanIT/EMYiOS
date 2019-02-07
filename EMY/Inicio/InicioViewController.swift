@@ -45,7 +45,8 @@ class InicioViewController: UIViewController {
                     let json = try JSONSerialization.jsonObject(with: datos!, options: JSONSerialization.ReadingOptions.mutableContainers) as! [String:Any]
                     
                   //print(json)
-                    DispatchQueue.main.async {//Habilitar tarea asincrona para optimizar carga
+                    DispatchQueue.main.async {
+                        //Habilitar tarea asincrona para optimizar carga
 
                     
                     //Recorrer las llaves del JSON hasta llegar a los valores que necesitamos
