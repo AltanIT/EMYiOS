@@ -8,15 +8,26 @@
 
 import UIKit
 
+struct Personas: Decodable{
+    let Alias: String
+    let ImagenPerfil: String
+    
+}
+
 class ListaPersonasViewController: UIViewController {
 
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         
         
         let webservice = "http://35.196.214.220/ios/Jsontodo.php"
+        
         let objetoUrl =    URL(string: webservice)
         
+        
+        
+    
         let tarea = URLSession.shared.dataTask(with: objetoUrl!){
             datos,respuesta,error in
             
@@ -24,19 +35,30 @@ class ListaPersonasViewController: UIViewController {
                 print("Error de conexion")
                 
             }else{
-                do{
+            
+                
+                
+               do{
                     
-                    let json = try JSONSerialization.jsonObject(with: datos!, options: JSONSerialization.ReadingOptions.mutableContainers) as! [String:Any]
+
                     
-               
-                    let llaveJson = json["Persona"] as! [String:Any]
-                    let alias = llaveJson["Alias"] as! String
+                /*let personas = try JSONDecoder().decode([Personas].self, from: datos!)
+                    
+
+                 for person in personas{
+                        print(person.Alias)
+                    }*/
+                
+                DispatchQueue.main.async {
+                    
+
+                   print(respuesta)
+                    /*let personas = json["Persona"] as! [String:Any]
+                    print(personas)*/
                     
                     
-                    //var AliasArreglo = [String]()
-                    for i in alias{
-                        print(i)
-                    }
+                    
+                }
                
                     
                 }catch{
@@ -50,8 +72,9 @@ class ListaPersonasViewController: UIViewController {
         tarea.resume()
 
 
-    }
     
+        
+    }
 
   
 
