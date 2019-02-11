@@ -77,7 +77,6 @@ class ViewController: UIViewController {
     
           print(respuesta)
             mensaje = respuesta as String
-                
             
             if(respuesta==""||respuesta=="Ok"){
 
