@@ -142,6 +142,7 @@
                                                     <color key="titleColor" red="0.99999600649999998" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                 </state>
                                                 <connections>
+                                                    <action selector="Guardar:" destination="u0H-Ag-88R" eventType="touchUpInside" id="nRn-x2-fpz"/>
                                                     <segue destination="WVZ-GR-OOc" kind="show" id="5RS-De-UDu"/>
                                                 </connections>
                                             </button>
@@ -242,7 +243,10 @@
                     <simulatedToolbarMetrics key="simulatedBottomBarMetrics"/>
                     <size key="freeformSize" width="375" height="1000"/>
                     <connections>
+                        <outlet property="ApellidoMText" destination="JtC-sQ-4nr" id="jVP-mv-3aa"/>
+                        <outlet property="ApellidoPText" destination="z0C-Dv-UUb" id="AYp-IG-IGB"/>
                         <outlet property="DatePickerTF" destination="QEP-XL-IHs" id="MEr-1C-ASa"/>
+                        <outlet property="nombreText" destination="HKe-5k-yaT" id="Xgy-fx-xNy"/>
                         <outlet property="texto" destination="HKe-5k-yaT" id="yhD-w1-jQP"/>
                     </connections>
                 </viewController>

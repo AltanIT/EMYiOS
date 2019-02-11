@@ -8,7 +8,6 @@
 
 /* Begin PBXBuildFile section */
 		35BF37E683D646132089697D /* Pods_EMY.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8A1DE82A8828AAF6A375879A /* Pods_EMY.framework */; };
-		641C1D5021F78005007B9BAA /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6479729421F67E4C00EA1FDB /* ViewController.swift */; };
 		646CE01D21FA455500DBD066 /* InicioViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 646CE01C21FA455500DBD066 /* InicioViewController.swift */; };
 		646CE02521FA6DB600DBD066 /* Registro.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 646CE02421FA6DB600DBD066 /* Registro.storyboard */; };
 		646CE02721FA6DF600DBD066 /* RegistroViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 646CE02621FA6DF600DBD066 /* RegistroViewController.swift */; };
@@ -22,6 +21,7 @@
 		647972B321F67E4D00EA1FDB /* EMYUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 647972B221F67E4D00EA1FDB /* EMYUITests.swift */; };
 		64FF778B22039DE900987072 /* Persona.swift in Sources */ = {isa = PBXBuildFile; fileRef = 64FF778A22039DE900987072 /* Persona.swift */; };
 		9344E33D22062090005E2938 /* Pods in Resources */ = {isa = PBXBuildFile; fileRef = 9344E33C2206208F005E2938 /* Pods */; };
+		938285EA220F6BC3003CEA17 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6479729421F67E4C00EA1FDB /* ViewController.swift */; };
 		C12974E006CC128B6E22359C /* Pods_EMYUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 242A75ABA57E55278392EDBE /* Pods_EMYUITests.framework */; };
 		F0DAD393D3140C73E4B351FD /* Pods_EMYTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5FBC97C72C2C8520B0F52BD0 /* Pods_EMYTests.framework */; };
 /* End PBXBuildFile section */
@@ -535,7 +535,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				641C1D5021F78005007B9BAA /* ViewController.swift in Sources */,
+				938285EA220F6BC3003CEA17 /* ViewController.swift in Sources */,
 				647972B321F67E4D00EA1FDB /* EMYUITests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
