@@ -30,7 +30,7 @@ class InicioViewController: UIViewController {
         // Do any additional setup after loading the view.
         let Usuario = UserDefaults.standard.string(forKey: "Usuario")
         
-        let webservice = "http://35.196.214.220/ios/MiPerfil.php?correo=\(Usuario!)"
+        let webservice = "https://emy.mx/ios/MiPerfil.php?correo=\(Usuario!)"
         let objetoUrl =    URL(string: webservice)
         
         let tarea = URLSession.shared.dataTask(with: objetoUrl!){
@@ -77,7 +77,7 @@ class InicioViewController: UIViewController {
         self.txtAlias.text = alias
         
         DispatchQueue.main.async {
-            self.imgPerfil.sd_setImage(with: URL(string: "http://35.196.214.220/emy/"+perfil), placeholderImage: UIImage(named: "placeholder.png"))
+            self.imgPerfil.sd_setImage(with: URL(string: "https://emy.mx/emy/"+perfil), placeholderImage: UIImage(named: "placeholder.png"))
             
             self.imgPerfil.layer.borderWidth = 1
             self.imgPerfil.layer.masksToBounds = false
@@ -85,11 +85,9 @@ class InicioViewController: UIViewController {
             self.imgPerfil.layer.cornerRadius = self.imgPerfil.frame.height/2
             self.imgPerfil.clipsToBounds = true
             
-            self.Portada.sd_setImage(with: URL(string: "http://35.196.214.220/emy/"+portada), placeholderImage: UIImage(named: "placeholder.png"))
+            self.Portada.sd_setImage(with: URL(string: "https://emy.mx/emy/"+portada), placeholderImage: UIImage(named: "placeholder.png"))
             
-            print(portada)
-            
-            
+         
             
             
             

@@ -58,7 +58,7 @@ class ViewController: UIViewController {
         
         
         
-        let request = NSMutableURLRequest(url: NSURL(string: "http://35.196.214.220/ios/Login.php?correo=\(txtUsuario.text!)&contrasena=\(txtPass.text!)")! as URL)
+        let request = NSMutableURLRequest(url: NSURL(string: "https://emy.mx/ios/Login.php?correo=\(txtUsuario.text!)&contrasena=\(txtPass.text!)")! as URL)
         request.httpMethod = "GET"
     
         let task = URLSession.shared.dataTask(with: request as URLRequest)

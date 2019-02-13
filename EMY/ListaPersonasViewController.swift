@@ -10,72 +10,90 @@ import UIKit
 
 struct Personas: Decodable{
     let Alias: String
-    let ImagenPerfil: String
+    
     
 }
 
-class ListaPersonasViewController: UIViewController {
+
+
+class ListaPersonasViewController: UIViewController, UITableViewDelegate, UITableViewDataSource {
+    var respuesta = ""
+    
+    var people: [String] = []
+
+
+  
+    var c = 0;
+
+
+    
+    @IBOutlet weak var tabla: UITableView!
+
 
     
     override func viewDidLoad() {
         super.viewDidLoad()
         
+        tabla.dataSource = self
+        tabla.delegate = self
         
-        let webservice = "http://35.196.214.220/ios/Jsontodo.php"
+
+        let url = "https://emy.mx/ios/Jsontodo.php"
+        let urlObj = URL(string: url)
         
-        let objetoUrl =    URL(string: webservice)
         
         
-        
-    
-        let tarea = URLSession.shared.dataTask(with: objetoUrl!){
-            datos,respuesta,error in
+         URLSession.shared.dataTask(with: urlObj!){(data, error, response) in
+            do{
+            var personas = try JSONDecoder().decode([Personas].self, from: data!)
             
-            if error != nil{
-                print("Error de conexion")
+                UserDefaults.standard.set(personas.count, forKey: "contador")
                 
-            }else{
+                
+           self.people.append("Ho")
+                
+                
+                
+              
             
-                
-                
-               do{
-                    
-
-                    
-                /*let personas = try JSONDecoder().decode([Personas].self, from: datos!)
-                    
-
-                 for person in personas{
-                        print(person.Alias)
-                    }*/
-                
-                DispatchQueue.main.async {
-                    
-
-                   print(respuesta)
-                    /*let personas = json["Persona"] as! [String:Any]
-                    print(personas)*/
-                    
-                    
-                    
-                }
-               
-                    
-                }catch{
-                    print("error")
-                }
+            }catch{
+                print("error")
             }
             
             
-        }
+
+            
+            
+            }.resume()
+
+        self.c = UserDefaults.standard.integer(forKey: "contador")
         
-        tarea.resume()
-
-
-    
         
-    }
 
+        
   
 
+    }
+    
+    
+
+ 
+
+  func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
+
+        return self.c  //Cuantos elementos contendra la tabla
+
+    }
+    
+   func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
+
+    print(self.people)
+
+        let celda = UITableViewCell()
+
+        celda.textLabel?.text = "Hola"
+        
+        return celda
+    }
+    
 }
