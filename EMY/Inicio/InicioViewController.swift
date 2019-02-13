@@ -15,8 +15,12 @@ class InicioViewController: UIViewController {
     
     @IBOutlet weak var txtAlias: UILabel!
     @IBOutlet weak var Portada: UIImageView!
-    
     @IBOutlet weak var imgPerfil: UIImageView!
+    
+    @IBOutlet weak var txtCorreo: UILabel!
+    @IBOutlet weak var txtNumero: UILabel!
+    
+    
     var persona = Persona()
 
     
@@ -26,7 +30,11 @@ class InicioViewController: UIViewController {
     
         
 
-            txtAlias.text = "Hola, estamos cargando tu informaciòn"
+            txtAlias.text = "Cargando"
+            txtCorreo.text = "Cargando"
+            txtNumero.text = "Cargando"
+        
+        
         // Do any additional setup after loading the view.
         let Usuario = UserDefaults.standard.string(forKey: "Usuario")
         
@@ -55,8 +63,12 @@ class InicioViewController: UIViewController {
                     let StringAlias = llaveJson["Alias"] as! String
                     let StringPortada = llaveJson["FotoPortada"] as! String
                     let StringPerfil = llaveJson["FotoPerfil"] as! String
+                    
+                    let StringEmail = llaveJson["Email"] as! String
+                    let StringMovil = llaveJson["Movil"] as! String
                         
-                    self.mostrarPerfil(alias: StringAlias, portada: StringPortada, perfil: StringPerfil)
+                        
+                        self.mostrarPerfil(alias: StringAlias, portada: StringPortada, perfil: StringPerfil, email: StringEmail, movil: StringMovil )
                     }
                    
                   
@@ -65,7 +77,6 @@ class InicioViewController: UIViewController {
                     print("error")
                 }
             }
-            
 
         }
         
@@ -73,7 +84,7 @@ class InicioViewController: UIViewController {
 
     }
     
-    func mostrarPerfil(alias:String, portada:String, perfil:String){
+    func mostrarPerfil(alias:String, portada:String, perfil:String, email: String, movil:String){
         self.txtAlias.text = alias
         
         DispatchQueue.main.async {
@@ -91,10 +102,9 @@ class InicioViewController: UIViewController {
             
             
             
-            
-            
             self.txtAlias.text = alias
-
+            self.txtCorreo.text = email
+            self.txtNumero.text = movil
         }
 
         
