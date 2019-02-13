@@ -66,14 +66,6 @@
                                     <segue destination="Qxe-z0-GvI" kind="show" id="Vlz-YY-93W"/>
                                 </connections>
                             </button>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="LOGO MAC" translatesAutoresizingMaskIntoConstraints="NO" id="fwh-y7-zBY">
-                                <rect key="frame" x="111" y="57" width="153" height="156"/>
-                                <constraints>
-                                    <constraint firstAttribute="width" constant="153" id="3ez-cp-pDx"/>
-                                    <constraint firstAttribute="height" constant="156" id="MF5-YP-z4e"/>
-                                    <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="153" id="p7x-JU-cdn"/>
-                                </constraints>
-                            </imageView>
                             <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Contraseña o PIN" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="EFa-Rz-hAC">
                                 <rect key="frame" x="52" y="330" width="273" height="30"/>
                                 <constraints>
@@ -84,23 +76,29 @@
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits" keyboardAppearance="alert" secureTextEntry="YES" textContentType="new-password"/>
                             </textField>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="LOGO MAC" translatesAutoresizingMaskIntoConstraints="NO" id="fwh-y7-zBY">
+                                <rect key="frame" x="105" y="76" width="162" height="139"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="139" id="8Sn-gd-0ig"/>
+                                    <constraint firstAttribute="width" constant="162" id="Cr9-0q-vlC"/>
+                                </constraints>
+                            </imageView>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
                             <constraint firstItem="ea4-FQ-ThL" firstAttribute="trailing" secondItem="JXV-ao-5TU" secondAttribute="trailing" constant="50" id="2G2-BH-4t2"/>
                             <constraint firstItem="VEf-pT-hzC" firstAttribute="top" secondItem="EFa-Rz-hAC" secondAttribute="bottom" constant="32" id="3pi-C2-9FG"/>
-                            <constraint firstItem="JXV-ao-5TU" firstAttribute="top" secondItem="fwh-y7-zBY" secondAttribute="bottom" constant="58" id="5iV-hm-h2Z"/>
                             <constraint firstItem="VEf-pT-hzC" firstAttribute="leading" secondItem="ea4-FQ-ThL" secondAttribute="leading" constant="111" id="BI2-cN-hbZ"/>
                             <constraint firstItem="ea4-FQ-ThL" firstAttribute="trailing" secondItem="VEf-pT-hzC" secondAttribute="trailing" constant="125" id="Bjt-XX-IHg"/>
                             <constraint firstItem="0UP-XP-vR6" firstAttribute="top" secondItem="VEf-pT-hzC" secondAttribute="bottom" constant="32.5" id="DtY-ox-aTT"/>
                             <constraint firstItem="0UP-XP-vR6" firstAttribute="top" secondItem="VEf-pT-hzC" secondAttribute="bottom" constant="32.5" id="ECh-4D-2gx"/>
+                            <constraint firstItem="ea4-FQ-ThL" firstAttribute="trailing" secondItem="fwh-y7-zBY" secondAttribute="trailing" constant="108" id="FqL-sa-waD"/>
                             <constraint firstItem="ea4-FQ-ThL" firstAttribute="trailing" secondItem="DB4-VU-cAu" secondAttribute="trailing" constant="104" id="PS8-od-K7k"/>
                             <constraint firstItem="EFa-Rz-hAC" firstAttribute="top" secondItem="JXV-ao-5TU" secondAttribute="bottom" constant="29" id="Qop-RF-fRd"/>
                             <constraint firstItem="ea4-FQ-ThL" firstAttribute="bottom" secondItem="DB4-VU-cAu" secondAttribute="bottom" constant="129" id="Ra1-7Q-bZP"/>
-                            <constraint firstItem="ea4-FQ-ThL" firstAttribute="trailing" secondItem="fwh-y7-zBY" secondAttribute="trailing" constant="111" id="Rx1-dj-JWt"/>
                             <constraint firstItem="ea4-FQ-ThL" firstAttribute="trailing" secondItem="EFa-Rz-hAC" secondAttribute="trailing" constant="50" id="TlW-wZ-rB8"/>
-                            <constraint firstItem="JXV-ao-5TU" firstAttribute="top" secondItem="fwh-y7-zBY" secondAttribute="bottom" constant="58" id="YVp-SK-byR"/>
                             <constraint firstItem="0UP-XP-vR6" firstAttribute="leading" secondItem="ea4-FQ-ThL" secondAttribute="leading" constant="88" id="aZU-je-qZC"/>
+                            <constraint firstItem="fwh-y7-zBY" firstAttribute="top" secondItem="ea4-FQ-ThL" secondAttribute="top" constant="56" id="ccu-fo-jH2"/>
                             <constraint firstItem="EFa-Rz-hAC" firstAttribute="leading" secondItem="ea4-FQ-ThL" secondAttribute="leading" constant="52" id="hyz-25-xh6"/>
                             <constraint firstItem="VEf-pT-hzC" firstAttribute="top" secondItem="EFa-Rz-hAC" secondAttribute="bottom" constant="32" id="lmZ-B5-Sns"/>
                             <constraint firstItem="DB4-VU-cAu" firstAttribute="top" secondItem="0UP-XP-vR6" secondAttribute="bottom" constant="33" id="lxo-Ik-VJ7"/>
@@ -108,9 +106,9 @@
                             <constraint firstItem="DB4-VU-cAu" firstAttribute="top" secondItem="0UP-XP-vR6" secondAttribute="bottom" constant="33" id="nwW-zn-gxN"/>
                             <constraint firstItem="DB4-VU-cAu" firstAttribute="leading" secondItem="ea4-FQ-ThL" secondAttribute="leading" constant="105" id="o1l-Qz-Q6P"/>
                             <constraint firstItem="EFa-Rz-hAC" firstAttribute="top" secondItem="JXV-ao-5TU" secondAttribute="bottom" constant="29" id="tqY-9Z-s6u"/>
+                            <constraint firstItem="JXV-ao-5TU" firstAttribute="top" secondItem="fwh-y7-zBY" secondAttribute="bottom" constant="56" id="wI0-xy-Nlh"/>
+                            <constraint firstItem="fwh-y7-zBY" firstAttribute="leading" secondItem="ea4-FQ-ThL" secondAttribute="leading" constant="105" id="xGC-VJ-vXm"/>
                             <constraint firstItem="ea4-FQ-ThL" firstAttribute="trailing" secondItem="0UP-XP-vR6" secondAttribute="trailing" constant="87" id="yY9-rN-bV1"/>
-                            <constraint firstItem="fwh-y7-zBY" firstAttribute="leading" secondItem="ea4-FQ-ThL" secondAttribute="leading" constant="111" id="yga-1K-0ir"/>
-                            <constraint firstItem="fwh-y7-zBY" firstAttribute="top" secondItem="ea4-FQ-ThL" secondAttribute="top" constant="37" id="zCV-3b-B7p"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="ea4-FQ-ThL"/>
                     </view>
@@ -408,6 +406,6 @@
         <image name="icons8-usuario-masculino-en-círculo-filled-50" width="37.5" height="37.5"/>
     </resources>
     <inferredMetricsTieBreakers>
-        <segue reference="CQu-kB-7Pi"/>
+        <segue reference="eOl-2O-38c"/>
     </inferredMetricsTieBreakers>
 </document>
