@@ -18,12 +18,19 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="51095797_2223321777909772_1225560997993906176_n" highlightedImage="51095797_2223321777909772_1225560997993906176_n" translatesAutoresizingMaskIntoConstraints="NO" id="4Rr-WP-UCl">
-                                <rect key="frame" x="46" y="90" width="283" height="155"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="51095797_2223321777909772_1225560997993906176_n" highlightedImage="51095797_2223321777909772_1225560997993906176_n" translatesAutoresizingMaskIntoConstraints="NO" id="4Rr-WP-UCl">
+                                <rect key="frame" x="16" y="109" width="343" height="203"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="203" id="1ND-8M-G2L"/>
+                                </constraints>
                             </imageView>
                         </subviews>
                         <color key="backgroundColor" red="0.70520701139999997" green="0.16479328100000001" blue="0.12817060799999999" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                        <constraints>
+                            <constraint firstItem="4Rr-WP-UCl" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="16" id="Cfg-2k-n4c"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="4Rr-WP-UCl" secondAttribute="trailing" constant="16" id="mPn-DP-TY2"/>
+                            <constraint firstItem="4Rr-WP-UCl" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="89" id="oJu-4Z-7nn"/>
+                        </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
                     <navigationItem key="navigationItem" id="Pog-29-ceB" colorLabel="IBBuiltInLabel-Red"/>

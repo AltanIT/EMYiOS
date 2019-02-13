@@ -1,27 +1,47 @@
 //
 //  RegistroViewController.swift
 //  EMY
-//
 //  Created by Carlos Arturo Pimentel on 1/24/19.
 //  Copyright © 2019 EMY. All rights reserved.
-//
 
 import UIKit
 
 class RegistroViewController: UIViewController {
 
+    override func viewDidLoad(){
+        super.viewDidLoad()
+        
+        createDatePicker()
+    
+    }
+     //Recoger los datos ingresados
+    @IBOutlet weak var nombreText: UITextField!
+    
+    @IBOutlet weak var ApellidoPText: UITextField!
+    
+    @IBOutlet weak var ApellidoMText: UITextField!
+    
+    // Inicia funcion de conexion
+ 
+    
+    
+    
+        
+    //Señor Don boton de registrar
+    
+    @IBAction func Guardar(_ sender: UIButton) {
+   
+        
+        
+     
+    }
+    
     
     //Empieza el Calendario
     @IBOutlet weak var DatePickerTF: UITextField!
     let datePicker = UIDatePicker()
     
-    override func viewDidLoad(){
-        super.viewDidLoad()
-        
-        createDatePicker()
-        
-    }
-    
+   
     func createDatePicker(){
         
         datePicker.datePickerMode = .date
@@ -33,7 +53,7 @@ class RegistroViewController: UIViewController {
         let toolbar = UIToolbar()
         toolbar.sizeToFit()
         
-        //add a done button on this toolbar
+        //Agrega un boton en este toolbar
         let doneButton = UIBarButtonItem(barButtonSystemItem:.done, target: nil, action: #selector (doneClicked))
         
         toolbar.setItems([doneButton], animated: true)

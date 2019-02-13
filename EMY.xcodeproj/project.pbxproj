@@ -23,6 +23,8 @@
 		64F3785A220B96D800981A2C /* ListaPersonasViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 64F37859220B96D800981A2C /* ListaPersonasViewController.swift */; };
 		64FF778B22039DE900987072 /* Persona.swift in Sources */ = {isa = PBXBuildFile; fileRef = 64FF778A22039DE900987072 /* Persona.swift */; };
 		9344E33D22062090005E2938 /* Pods in Resources */ = {isa = PBXBuildFile; fileRef = 9344E33C2206208F005E2938 /* Pods */; };
+		938285EA220F6BC3003CEA17 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6479729421F67E4C00EA1FDB /* ViewController.swift */; };
+		93BBE1A72214D5AB0017ADF9 /* EdicionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 93BBE1A62214D5AB0017ADF9 /* EdicionViewController.swift */; };
 		C12974E006CC128B6E22359C /* Pods_EMYUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 242A75ABA57E55278392EDBE /* Pods_EMYUITests.framework */; };
 		F0DAD393D3140C73E4B351FD /* Pods_EMYTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5FBC97C72C2C8520B0F52BD0 /* Pods_EMYTests.framework */; };
 /* End PBXBuildFile section */
@@ -103,6 +105,7 @@
 		8C649E6DBEA45366ED6C809C /* Pods-EMYTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-EMYTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-EMYTests/Pods-EMYTests.release.xcconfig"; sourceTree = "<group>"; };
 		9344E33C2206208F005E2938 /* Pods */ = {isa = PBXFileReference; lastKnownFileType = folder; path = Pods; sourceTree = "<group>"; };
 		9344E33E220620B9005E2938 /* Pods.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = Pods.xcodeproj; path = Pods/Pods.xcodeproj; sourceTree = "<group>"; };
+		93BBE1A62214D5AB0017ADF9 /* EdicionViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EdicionViewController.swift; sourceTree = "<group>"; };
 		ABADBE165FF7C9ADCC25DEF8 /* Pods-EMY.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-EMY.debug.xcconfig"; path = "Pods/Target Support Files/Pods-EMY/Pods-EMY.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -173,6 +176,7 @@
 			isa = PBXGroup;
 			children = (
 				646CE01C21FA455500DBD066 /* InicioViewController.swift */,
+				93BBE1A62214D5AB0017ADF9 /* EdicionViewController.swift */,
 			);
 			path = Inicio;
 			sourceTree = "<group>";
@@ -535,6 +539,7 @@
 				646CE01D21FA455500DBD066 /* InicioViewController.swift in Sources */,
 				646CE02B21FAAF6700DBD066 /* GuardarViewController.swift in Sources */,
 				6479729321F67E4C00EA1FDB /* AppDelegate.swift in Sources */,
+				93BBE1A72214D5AB0017ADF9 /* EdicionViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -550,6 +555,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				938285EA220F6BC3003CEA17 /* ViewController.swift in Sources */,
 				647972B321F67E4D00EA1FDB /* EMYUITests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
