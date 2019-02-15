@@ -4,7 +4,6 @@
 //
 //  Created by Carlos Arturo Pimentel on 1/24/19.
 //  Copyright © 2019 EMY. All rights reserved.
-//
 
 import UIKit
 import SDWebImage
