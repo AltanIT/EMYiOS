@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14460.31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14460.31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="m08-IM-Dgt">
     <device id="retina4_7" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
@@ -340,7 +340,7 @@
                                 <rect key="frame" x="0.0" y="20" width="375" height="598"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <prototypes>
-                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="CellPersonas" textLabel="DvQ-Mp-2Zd" style="IBUITableViewCellStyleDefault" id="jXN-E4-YZ5">
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="CellPersonas" textLabel="DvQ-Mp-2Zd" style="IBUITableViewCellStyleDefault" id="jXN-E4-YZ5" customClass="PersonasCell" customModule="EMY" customModuleProvider="target">
                                         <rect key="frame" x="0.0" y="28" width="375" height="44"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="jXN-E4-YZ5" id="8B0-cN-0c0">
@@ -356,8 +356,14 @@
                                                 </label>
                                             </subviews>
                                         </tableViewCellContentView>
+                                        <connections>
+                                            <outlet property="lblalias" destination="DvQ-Mp-2Zd" id="baz-6P-0Ma"/>
+                                        </connections>
                                     </tableViewCell>
                                 </prototypes>
+                                <connections>
+                                    <outlet property="dataSource" destination="m08-IM-Dgt" id="s1i-eg-Avd"/>
+                                </connections>
                             </tableView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -371,7 +377,7 @@
                     </view>
                     <tabBarItem key="tabBarItem" title="Personas" image="icons8-añadir-grupo-de-usuarios-hombre-hombre-filled-50" landscapeImage="icons8-añadir-grupo-de-usuarios-hombre-hombre-filled-50" largeContentSizeImage="icons8-añadir-grupo-de-usuarios-hombre-hombre-filled-50" id="AAj-V5-ft0"/>
                     <connections>
-                        <outlet property="tabla" destination="BDp-EQ-v6O" id="5RR-2T-iGS"/>
+                        <outlet property="tabla" destination="BDp-EQ-v6O" id="tpf-n6-Lr7"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="xAA-Ai-PLa" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -401,7 +407,7 @@
     </scenes>
     <resources>
         <image name="LOGO MAC" width="92.639999389648438" height="92.639999389648438"/>
-        <image name="icons8-añadir-grupo-de-usuarios-hombre-hombre-filled-50" width="37.5" height="37.5"/>
+        <image name="icons8-añadir-grupo-de-usuarios-hombre-hombre-filled-50" width="16" height="16"/>
         <image name="icons8-burbuja" width="37.5" height="37.5"/>
         <image name="icons8-mosaico-filled-50" width="37.5" height="37.5"/>
         <image name="icons8-settings_filled" width="25" height="25"/>
