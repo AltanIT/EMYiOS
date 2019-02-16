@@ -64,6 +64,14 @@ class ListaPersonasViewController: UIViewController, UITableViewDataSource{
         
         cell.lblalias.text = PersonasArray[indexPath.row].Alias
         
+        cell.imgPerfil.sd_setImage(with: URL(string: "https://emy.mx/"+PersonasArray[indexPath.row].RutaImagen))
+        
+        cell.imgPerfil.layer.borderWidth = 1
+        cell.imgPerfil.layer.masksToBounds = false
+        cell.imgPerfil.layer.borderColor = UIColor.white.cgColor
+        cell.imgPerfil.layer.cornerRadius = cell.imgPerfil.frame.height/2
+        cell.imgPerfil.clipsToBounds = true
+        
         return cell
     }
 }
