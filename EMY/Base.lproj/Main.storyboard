@@ -414,7 +414,7 @@
     </scenes>
     <resources>
         <image name="LOGO MAC" width="92.639999389648438" height="92.639999389648438"/>
-        <image name="icons8-añadir-grupo-de-usuarios-hombre-hombre-filled-50" width="16" height="16"/>
+        <image name="icons8-añadir-grupo-de-usuarios-hombre-hombre-filled-50" width="0.0" height="0.0"/>
         <image name="icons8-burbuja" width="37.5" height="37.5"/>
         <image name="icons8-mosaico-filled-50" width="37.5" height="37.5"/>
         <image name="icons8-settings_filled" width="25" height="25"/>
