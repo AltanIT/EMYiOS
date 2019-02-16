@@ -421,6 +421,7 @@
         <image name="icons8-usuario-masculino-en-círculo-filled-50" width="37.5" height="37.5"/>
     </resources>
     <inferredMetricsTieBreakers>
-        <segue reference="eOl-2O-38c"/>
+        <segue reference="Fcu-gs-xFA"/>
+        <segue reference="CQu-kB-7Pi"/>
     </inferredMetricsTieBreakers>
 </document>
