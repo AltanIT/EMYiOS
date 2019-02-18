@@ -25,5 +25,7 @@ class PersonasCell: UITableViewCell {
         super.setSelected(selected, animated: animated)
 
     }
+    
+    
 
 }

@@ -100,6 +100,7 @@ class ViewController: UIViewController {
     
     
     func mostrarmensaje(){
+        do{
        DispatchQueue.main.async {
         
         let alerta = UIAlertController(title: "EMY", message: mensaje, preferredStyle: .alert)
@@ -109,6 +110,10 @@ class ViewController: UIViewController {
         alerta.addAction(accion)
         self.present(alerta, animated: true, completion: nil)
         
+        }
+            
+        }catch{
+            print("Error")
         }
     }
 

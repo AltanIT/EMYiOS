@@ -11,7 +11,7 @@ import UIKit
 
 
 
-class ListaPersonasViewController: UIViewController, UITableViewDataSource{
+class ListaPersonasViewController: UIViewController, UITableViewDataSource, UITableViewDelegate{
    
     @IBOutlet weak var tabla: UITableView!
     
@@ -20,6 +20,9 @@ class ListaPersonasViewController: UIViewController, UITableViewDataSource{
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        tabla.delegate = self
+        tabla.dataSource = self
+        
         cargarwebservice()
     }
     
@@ -59,6 +62,8 @@ class ListaPersonasViewController: UIViewController, UITableViewDataSource{
         return self.PersonasArray.count
     }
     
+    
+    
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         guard let cell = tableView.dequeueReusableCell(withIdentifier: "CellPersonas") as? PersonasCell else {return UITableViewCell()}
         
@@ -71,7 +76,23 @@ class ListaPersonasViewController: UIViewController, UITableViewDataSource{
         cell.imgPerfil.layer.borderColor = UIColor.white.cgColor
         cell.imgPerfil.layer.cornerRadius = cell.imgPerfil.frame.height/2
         cell.imgPerfil.clipsToBounds = true
+      
+        
         
         return cell
+        
+       
+        
     }
+    
+    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+       print("Ir a perfil")
+    }
+    
+    
+    
+    
 }
+
+
+

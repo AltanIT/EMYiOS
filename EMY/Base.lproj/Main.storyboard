@@ -385,11 +385,45 @@
                     <tabBarItem key="tabBarItem" title="Personas" image="icons8-añadir-grupo-de-usuarios-hombre-hombre-filled-50" landscapeImage="icons8-añadir-grupo-de-usuarios-hombre-hombre-filled-50" largeContentSizeImage="icons8-añadir-grupo-de-usuarios-hombre-hombre-filled-50" id="AAj-V5-ft0"/>
                     <connections>
                         <outlet property="tabla" destination="BDp-EQ-v6O" id="tpf-n6-Lr7"/>
+                        <segue destination="Kok-5f-THN" kind="show" identifier="irPerfil" id="UI8-PP-x02"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="xAA-Ai-PLa" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="4184.8000000000002" y="-819.04047976011998"/>
+        </scene>
+        <!--Title-->
+        <scene sceneID="LhA-36-GjG">
+            <objects>
+                <viewController id="Kok-5f-THN" customClass="PerfilPersonaViewController" customModule="EMY" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="PyA-Yn-tmf">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="U3d-BN-x6h">
+                                <rect key="frame" x="16" y="39" width="29" height="22"/>
+                                <state key="normal" title="Button" image="icons8-back_filled"/>
+                                <connections>
+                                    <action selector="btnAtras:" destination="Kok-5f-THN" eventType="touchUpInside" id="eOS-j5-Bgo"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="U3d-BN-x6h" firstAttribute="top" secondItem="Xit-8H-dAJ" secondAttribute="top" constant="19" id="2eW-79-ev3"/>
+                            <constraint firstItem="U3d-BN-x6h" firstAttribute="top" secondItem="Xit-8H-dAJ" secondAttribute="top" id="Py5-Lk-jgW"/>
+                            <constraint firstItem="U3d-BN-x6h" firstAttribute="leading" secondItem="Xit-8H-dAJ" secondAttribute="leading" constant="16" id="z4X-yL-fVy"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="Xit-8H-dAJ"/>
+                    </view>
+                    <navigationItem key="navigationItem" title="Title" id="rUE-VJ-jIL"/>
+                    <connections>
+                        <outlet property="btnAtras" destination="U3d-BN-x6h" id="trL-Xg-b4e"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="lSF-e5-OXi" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="5124" y="-819.04047976011998"/>
         </scene>
         <!--Tab Bar Controller-->
         <scene sceneID="S74-G5-24u">
@@ -414,14 +448,14 @@
     </scenes>
     <resources>
         <image name="LOGO MAC" width="92.639999389648438" height="92.639999389648438"/>
-        <image name="icons8-añadir-grupo-de-usuarios-hombre-hombre-filled-50" width="0.0" height="0.0"/>
+        <image name="icons8-añadir-grupo-de-usuarios-hombre-hombre-filled-50" width="16" height="16"/>
+        <image name="icons8-back_filled" width="100" height="100"/>
         <image name="icons8-burbuja" width="37.5" height="37.5"/>
         <image name="icons8-mosaico-filled-50" width="37.5" height="37.5"/>
         <image name="icons8-settings_filled" width="25" height="25"/>
         <image name="icons8-usuario-masculino-en-círculo-filled-50" width="37.5" height="37.5"/>
     </resources>
     <inferredMetricsTieBreakers>
-        <segue reference="Fcu-gs-xFA"/>
         <segue reference="CQu-kB-7Pi"/>
     </inferredMetricsTieBreakers>
 </document>
